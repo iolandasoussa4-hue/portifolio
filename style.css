@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+header {
+  background: #cff1f0;
+  color: rgb(12, 10, 10);
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  padding: 0;
+}
+
+nav a {
+  color: rgb(170, 157, 157);
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+#lista-projetos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.projeto {
+  border: 10px solid #848ae4;
+  padding: 10px;
+  width: 250px;
+  color: rgb(15, 15, 15);
+}
+
+/* 👇 FOTO AJUSTADA */
+.foto {
+  width: 200px;        /* tamanho menor */
+  height: 200px;       /* igual à largura */
+  border-radius: 60%;  /* deixa redonda */
+  object-fit: cover;   /* não deforma */
+  display: block;
+  margin: 50px auto;   /* centraliza */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  #lista-projetos {
+    flex-direction: column;
+  }
+}
